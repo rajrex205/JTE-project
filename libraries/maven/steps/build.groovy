@@ -1,7 +1,8 @@
-void call(){
-    stage("Maven: Build"){
-        steps{
-        mvn clean install
-        }
-    }
+
+void call() {
+   node {
+      stage("Maven: Build") {
+       // some code to run unit test
+        mvn clean install  
+      }
 }
