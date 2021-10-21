@@ -3,7 +3,7 @@ void call() {
    node {
       stage("Maven: Build") {
        // some code to run unit test
-         sh 'mvn -version'  
+         sh 'mvn clean install'  
       }   
    }
 }
