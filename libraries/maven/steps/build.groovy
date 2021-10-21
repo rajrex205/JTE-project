@@ -1,5 +1,5 @@
 void call(){
     stage("Maven: Build"){
-        "mvn clean install"
+        sh 'mvn clean install'
     }
 }
