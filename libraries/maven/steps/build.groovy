@@ -1,5 +1,6 @@
 void call(){
     stage("Maven: Build"){
-        echo "testing"
+        steps{
+        sh 'mvn clean install'
     }
 }
