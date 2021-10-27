@@ -1,6 +1,6 @@
 void call() {
    node {
-      stage("Maven: compile") {
+      stage("Maven-1: compile") {
       
          sh 'mvn install'  
       }   
