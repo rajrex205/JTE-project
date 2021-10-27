@@ -1,7 +1,8 @@
-void call(){
-    stage("github: checkout"){
-        steps {
-            git branch: "master", credentialsId: 'git2', url: 'https://github.com/rajrex205/maven-project.git'
-        }
-    }
+void call() {
+   node {
+      stage("Maven: Build") {
+      
+         sh "git branch: "master", credentialsId: 'git2', url: 'https://github.com/rajrex205/maven-project.git'"  
+      }   
+   }
 }
